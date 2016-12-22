@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NoDataTipsView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sez-Km-NHL">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="refreshBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="llw-ns-XbZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iiF-y9-VDA">
+                    <rect key="frame" x="80" y="184" width="160" height="160"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="WoU-Mz-Owz"/>
+                        <constraint firstAttribute="height" constant="160" id="vhL-hp-FOw"/>
+                    </constraints>
+                    <state key="normal" image="页面加载失败"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加载失败，点击页面刷新" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyr-WE-L28">
+                    <rect key="frame" x="20" y="354" width="280" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hua-re-ioj">
+                    <rect key="frame" x="15" y="400.5" width="290" height="40"/>
+                    <color key="backgroundColor" red="0.22745098039215686" green="0.59215686274509804" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="0HD-TF-1yn"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="NoDataBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="LxM-HI-cux"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iiF-y9-VDA" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1Ig-NQ-8mw"/>
+                <constraint firstItem="Hua-re-ioj" firstAttribute="top" secondItem="lyr-WE-L28" secondAttribute="bottom" constant="27" id="45b-jy-Qco"/>
+                <constraint firstAttribute="trailing" secondItem="Sez-Km-NHL" secondAttribute="trailing" id="9e3-cO-o1a"/>
+                <constraint firstItem="Hua-re-ioj" firstAttribute="top" secondItem="iiF-y9-VDA" secondAttribute="bottom" constant="20" id="AEB-iu-kLk"/>
+                <constraint firstAttribute="trailing" secondItem="Hua-re-ioj" secondAttribute="trailing" constant="15" id="FSz-hr-QYj"/>
+                <constraint firstItem="Hua-re-ioj" firstAttribute="top" secondItem="lyr-WE-L28" secondAttribute="bottom" constant="29" id="JDl-Gm-Mhq"/>
+                <constraint firstItem="Hua-re-ioj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="MHl-OG-hG9"/>
+                <constraint firstItem="lyr-WE-L28" firstAttribute="top" secondItem="iiF-y9-VDA" secondAttribute="bottom" constant="10" id="Sji-xT-9Xm"/>
+                <constraint firstItem="iiF-y9-VDA" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-20" id="ZBP-Cg-WSG"/>
+                <constraint firstItem="Sez-Km-NHL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Zny-ef-pY5"/>
+                <constraint firstItem="lyr-WE-L28" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="hhp-yp-wbt"/>
+                <constraint firstAttribute="bottom" secondItem="Sez-Km-NHL" secondAttribute="bottom" id="m2L-ZI-uCE"/>
+                <constraint firstItem="Sez-Km-NHL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wL6-hP-apm"/>
+                <constraint firstAttribute="trailing" secondItem="lyr-WE-L28" secondAttribute="trailing" constant="20" id="yKs-92-m5b"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="AEB-iu-kLk"/>
+                    <exclude reference="JDl-Gm-Mhq"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="noDataBtn" destination="Hua-re-ioj" id="ecP-J0-drI"/>
+                <outlet property="refDataBtn" destination="Sez-Km-NHL" id="GpF-Fj-k4c"/>
+                <outlet property="tipsIamgeBtn" destination="iiF-y9-VDA" id="ydI-sD-X73"/>
+                <outlet property="tipsStringLabel" destination="lyr-WE-L28" id="BiZ-cF-quc"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="页面加载失败" width="200" height="200"/>
+    </resources>
+</document>
