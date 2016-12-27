@@ -1,7 +1,7 @@
 #LQ系列--UI
 ####LQPhotoPickerDemo - https://github.com/XZTLLQ/LQClass （强烈推荐！！！可节约项目大量细节调控时间，体验效果很好！）
 ####LQPhotoPickerDemo - https://github.com/XZTLLQ/LQPhotoPickerDemo （选择图片上传）
-####LQIMInputView - https://github.com/xztl/LQIMInputView （聊天页面工具栏）
+####LQIMInputView - https://github.com/XZTLLQ/LQIMInputView （聊天页面工具栏）
 # LQClass（强烈推荐）
 ### 支持:
 #### LQViewController  （父类UIViewController）
